@@ -1,0 +1,198 @@
+@use "./header.scss";
+
+body {
+    background-color: #ffffff; /* Light background color */
+    margin: 0; /* Remove default margin */
+    font-family: Arial, sans-serif; /* Set a default font */
+    color: #333; /* Default text color */
+}
+
+.container {
+    max-width: 1200px; /* Set the maximum width */
+    margin: 0 auto; /* Center the content */
+    padding: 0 20px; /* Add padding for smaller screens */
+}
+
+.intro-section {
+    background-color: #fff; /* White background */
+    color: #333; /* Adjust text color for contrast */
+    padding: 40px 0; /* Add spacing */
+    text-align: center;
+
+    .intro-container {
+        max-width: 800px; /* Constrain content width */
+        margin: 0 auto; /* Center the content */
+    }
+
+    h1 {
+        font-size: 2.5rem; /* Large heading */
+        margin-bottom: 20px;
+    }
+
+    h2 {
+        font-size: 1.8rem; /* Medium heading */
+        margin-bottom: 20px;
+        font-weight: 400; /* Normal font weight */
+    }
+
+    p {
+        font-size: 1.2rem; /* Slightly larger text */
+        margin-bottom: 30px;
+        line-height: 1.6; /* Improve readability */
+    }
+
+    .cta-button {
+        background-color: #676d75; /* Updated button color */
+        color: #fff; /* White text */
+        border: none;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+
+        &:hover {
+            background-color: #4f545b; /* Slightly darker shade on hover */
+        }
+    }
+}
+
+.grid-section {
+    padding: 40px 0;
+    text-align: center;
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 columns */
+        gap: 20px; /* Space between grid items */
+        max-width: 1200px; /* Constrain content width */
+        margin: 0 auto; /* Center the grid */
+    }
+
+    .grid-item {
+        background-color: #fff; /* White background for items */
+        border-radius: 5px; /* Rounded corners */
+        padding: 20px;
+        text-align: center;
+        transition: box-shadow 0.3s ease;
+
+        img {
+            width: 100%; /* Make images responsive */
+            height: auto;
+            aspect-ratio: var(--grid-img-aspect-ratio, 1);
+            border-radius: 5px; /* Match the rounded corners */
+            margin-bottom: 10px; /* Space between image and text */
+        }
+
+        a {
+            text-decoration: none; /* Remove underline */
+            color: #4f545b; /* Blue text for links */
+            font-size: 1.2rem;
+            font-weight: bold;
+            transition: color 0.3s ease;
+
+            &:hover {
+                color: #4f545b; /* Darker blue on hover */
+            }
+        }
+    }
+}
+
+.contact-section {
+    background-color: #f9f9f9; /* Light background */
+    padding: 40px 20px;
+    text-align: center;
+
+    .contact-container {
+        max-width: 800px; /* Constrain content width */
+        margin: 0 auto; /* Center the content */
+    }
+
+    h2 {
+        font-size: 2rem; /* Heading size */
+        margin-bottom: 20px;
+        color: #333; /* Dark text color */
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+
+        i {
+            font-size: 1.5rem; /* Icon size */
+            color: #4f545b; /* Blue color for icons */
+            margin-right: 10px; /* Space between icon and text */
+        }
+
+        p {
+            font-size: .9rem; /* Text size */
+            color: #333; /* Dark text color */
+            margin: 0;
+            text-align: center; /* Align text to the center */
+        }
+    }
+}
+
+.indicator {
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    border-radius: 5px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+
+        li {
+            width: 12px; /* Bullet size */
+            height: 12px; /* Bullet size */
+            border-radius: 50%; /* Make it circular */
+            background-color: #333; /* Default bullet color */
+            margin-bottom: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+
+            &.active {
+                background-color: #fff; /* Highlight active bullet */
+            }
+
+            &:hover {
+                background-color: #fff; /* Darker blue on hover */
+            }
+        }
+    }
+}
+
+.section-separator {
+    width: 10%;
+    min-width: 80px;
+    height: 4px;
+    background-color: #333;
+    margin: 0 auto;
+}
+
+.page-cover {
+    background-color: rgb(156 176 132);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 16 / 5;
+
+    h1 {
+        color: #fff;
+        font-size: 3rem;
+    }
+}
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}

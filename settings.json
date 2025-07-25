@@ -1,0 +1,13 @@
+{
+  "editor.tabSize": 4,
+  "editor.insertSpaces": true,
+  "[vue]": {
+    "editor.tabSize": 4
+  },
+  "[scss]": {
+    "editor.tabSize": 4
+  },
+  "[typescript]": {
+    "editor.tabSize": 4
+  }
+}
